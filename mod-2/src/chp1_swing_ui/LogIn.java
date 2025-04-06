@@ -1,18 +1,18 @@
-package swing_ui;
+package chp1_swing_ui;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LogIn extends JFrame {
+public class Login extends JFrame {
 	
     JLabel userLabel, passLabel;
     JTextField userText;
     JPasswordField passText;
     JButton loginButton;
 
-    public LogIn() {
+    public Login() {
         setTitle("Login Form");
         setSize(300, 200);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -54,7 +54,7 @@ public class LogIn extends JFrame {
     public static void main(String[] args) {
     	
         SwingUtilities.invokeLater(() -> {
-            LogIn loginForm = new LogIn();
+            Login loginForm = new Login();
             loginForm.setVisible(true);
         });
     }
@@ -72,5 +72,6 @@ class Dashboard extends JFrame {
         add(welcomeLabel);
 
         setVisible(true);
+        
     }
 }
